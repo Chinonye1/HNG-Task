@@ -5,48 +5,55 @@
   box-sizing: border-box;
 }
 
-.background {
-  background: url('/Slack_pics.jpeg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
+
 
   
   
+
+
+
+
+
+.layout_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 5rem 3rem ;
+  
+}
+.layout_left {
+  justify-content: center;
+ 
+}
+.profile_image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  
+}
+.profile {
+  
+  
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  
+}
+.semi_profile {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex-direction: column;
+  justify-content: left;
+  ;
+  
+  gap: 10px;
 }
 
-.welcome-page-title {
-  font-size: 2em;
-  letter-spacing: 0.1em;
-  text-align: center;
-  margin: 20px 0;
-}
-.welcome-page-title span {
-  display: inline-block;
-  animation: bounce 0.5s ease infinite alternate;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
-@keyframes bounce {
-  from { transform: translateY(0); }
-  to { transform: translateY(-10px); }
-}
 
 
-.welcome-page-title span:nth-child(1) { animation-delay: 0.1s; }
-.welcome-page-title span:nth-child(2) { animation-delay: 0.2s; }
-.welcome-page-title span:nth-child(3) { animation-delay: 0.3s; }
-
-.welcome-page-title span:nth-child(14) { animation-delay: 1.4s; }
-.welcome-page-title span:nth-child(15) { animation-delay: 1.5s; }
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: blue;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
 
 
 nav {
