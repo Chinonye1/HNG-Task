@@ -91,16 +91,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
 
-  nav a {
-    padding: 10px 10px;
-  }
-}
+
 
 #goals {
   display: grid;
@@ -118,7 +110,15 @@ a:hover {
 }
 
 
+
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 10px 10px;
+  }
   #goals {
     grid-template-columns: 1fr; 
 }
