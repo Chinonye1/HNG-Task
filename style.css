@@ -1,15 +1,52 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Define CSS variable */
+:root {
+  --bg-opacity: 1;
+  --primary-blue : #007bff;
+  --font_color: #fff;
+  --link-color: rgb(95 234 213);
 }
 
 
 
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(15 23 42 / var(--bg-opacity));
+
+}
+.target {
+  color: var(--font_color);
+}
+
+
   
   
 
+
+.profile_name {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: var(--font_color);
+    
+}
+.profile_info_h1 {
+  font-size: 1.2em;
+  color: var(--font_color);
+  align-content: right;
+  margin-bottom: 0;
+
+}
+
+.profile_info_h2{
+  margin-bottom: 0;
+  color: var(--link-color);
+}
+.slack_email {
+  color: var(--link-color) ;
+}
 
 
 
@@ -18,12 +55,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  padding: 5rem 3rem ;
+  padding: 5rem 3rem 1rem 3rem;
   
 }
 .layout_left {
   justify-content: center;
+  
  
+}
+
+.layout_right {
+  height: 100vh;
+  overflow-y: scroll;
 }
 .profile_image img {
   width: 100px;
@@ -34,22 +77,70 @@
   
 }
 .profile {
-  
-  
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 100px auto;
+  column-gap: 1rem;
   justify-content: left;
   align-items: center;
-  gap: 10px;
-  
+  margin-bottom: 0.5rem;
 }
 .semi_profile {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
   justify-content: left;
   ;
   
   gap: 10px;
+}
+#contact {
+  
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+    opacity: 1;
+    background-color: rgb(50, 54, 73);
+    height: 5rem;
+    border-radius: 50px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin-top: 8rem !important
+
+}
+.pro{
+  color: var(--font_color);
+}
+
+
+
+.group_flex {
+ 
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.big_button {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a::before {
+  content: "";
+  display: inline-block; 
+  width: 30px; 
+  height: 2px;
+  background-color: #fff; 
+  vertical-align: middle; 
+  margin-right: 5px; 
+  transition: width 0.3s ease-in-out; 
+}
+
+nav a:hover::before {
+  width: 30%; 
 }
 
 
@@ -57,16 +148,20 @@
 
 
 nav {
-  background: blue;
-  color: #fff;
-  padding: 5px 5px;
+ 
+  color: var(--font_color);
+  margin-top: 8rem;
+ 
+  
+}
+nav ul li {
+  margin-bottom: 20px !important;
 }
 
 nav a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px 15px;
-  display: inline-block;
 }
 
 nav a:hover {
@@ -88,14 +183,15 @@ section {
 
 
 a {
-  color: #007bff;
+  color: darkblue;
   text-decoration: none;
   
 }
-
-a:hover {
-  
-  text-decoration: underline;
+.time_display{
+  color: var(--font_color);
+}
+.day_display{
+  color: var(--font_color);
 }
 
 
@@ -103,17 +199,22 @@ a:hover {
 
 #goals {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px; 
   padding: 20px; 
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
-  background-color: #f0f0f0; 
-  border: 1px solid #ccc; 
+  background-color: rgb(15 23 42 / var(--bg-opacity)); 
+  color: var(--font_color);
+   
   padding: 10px; 
   border-radius: 5px; 
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.copy {
+  color: var(--font_color);
+ 
 }
 
 
